@@ -1,0 +1,34 @@
+{
+  "name": "ChromoHelios",
+  "symbol": "CHLS9",
+  "description": "ChromoHelios CHLS9 est un prototype de token visuel et vibratoire relié à l'univers HeliosAstro.",
+  "image": "https://helios120.github.io/heliosastro-chls9/assets/chromohelios-logo.png",
+  "external_url": "https://helios120.github.io/heliosastro-chls9/",
+  "attributes": [
+    {
+      "trait_type": "Projet",
+      "value": "HeliosAstro"
+    },
+    {
+      "trait_type": "Type",
+      "value": "Fungible Token"
+    },
+    {
+      "trait_type": "Version",
+      "value": "CHLS9"
+    },
+    {
+      "trait_type": "Réseau",
+      "value": "Solana Devnet"
+    }
+  ],
+  "properties": {
+    "files": [
+      {
+        "uri": "https://helios120.github.io/heliosastro-chls9/assets/chromohelios-logo.png",
+        "type": "image/png"
+      }
+    ],
+    "category": "image"
+  }
+}
