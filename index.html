@@ -1,43 +1,164 @@
-<section class="token-data">
-  <div class="container">
-    <h2>Données du token</h2>
 
-    <div class="token-grid">
-      <div class="token-card">
-        <h3>Nom</h3>
-        <p>ChromoHelios CHLS9</p>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ChromoHelios CHLS9 — Token</title>
+  <meta name="description" content="ChromoHelios CHLS9, prototype token Solana Devnet lié à l’univers HeliosAstro." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="assets/chromohelios-logo.png" alt="Logo ChromoHelios CHLS9" class="brand-logo" />
+        <div>
+          <p class="eyebrow">HeliosAstro • Solana Devnet</p>
+          <h1>ChromoHelios CHLS9</h1>
+        </div>
       </div>
-
-      <div class="token-card">
-        <h3>Symbole</h3>
-        <p>CHLS9</p>
-      </div>
-
-      <div class="token-card">
-        <h3>Réseau</h3>
-        <p>Solana Devnet</p>
-      </div>
-
-      <div class="token-card">
-        <h3>Mint address</h3>
-        <p class="small">
-          Hu1p8Yrmu7pUYTfhsiKowieLUUaWX6GyUW4iX8KWhFhJ
-        </p>
-      </div>
-
-      <div class="token-card">
-        <h3>Supply prototype</h3>
-        <p>1 000 000 CHLS9</p>
-      </div>
-
-      <div class="token-card">
-        <h3>Metadata JSON</h3>
-        <p class="small">
-          <a href="https://helios120.github.io/heliosastro-chls9/metadata/chromohelios.json" target="_blank">
-            Ouvrir la metadata
-          </a>
-        </p>
-      </div>
+      <nav class="nav">
+        <a href="#token">Token</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#liens">Liens</a>
+      </nav>
     </div>
-  </div>
-</section>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">CHROMOHELIOS • SOLANA DEVNET</p>
+          <h2>ChromoHelios CHLS9</h2>
+          <p>
+            Prototype de token relié à l’univers HeliosAstro. Cette page présente le projet,
+            l’adresse du token, la supply, le réseau de test et les prochaines intégrations.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#token">Voir le token</a>
+            <a class="btn btn-secondary" href="#roadmap">Voir la roadmap</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <img src="assets/chromohelios-logo.png" alt="Symbole ChromoHelios" class="hero-logo" />
+        </div>
+      </div>
+    </section>
+
+    <section id="token" class="section">
+      <div class="container">
+        <h3>Fiche du token</h3>
+
+        <div class="card-grid">
+          <article class="card">
+            <span class="label">Nom</span>
+            <strong>ChromoHelios</strong>
+          </article>
+
+          <article class="card">
+            <span class="label">Symbole</span>
+            <strong>CHLS9</strong>
+          </article>
+
+          <article class="card">
+            <span class="label">Réseau</span>
+            <strong>Solana Devnet</strong>
+          </article>
+
+          <article class="card">
+            <span class="label">Décimales</span>
+            <strong>6</strong>
+          </article>
+
+          <article class="card">
+            <span class="label">Supply initiale</span>
+            <strong>1 000 000 CHLS9</strong>
+          </article>
+
+          <article class="card">
+            <span class="label">Statut</span>
+            <strong>Prototype actif</strong>
+          </article>
+        </div>
+
+        <div class="mint-box">
+          <p class="label">Adresse du mint</p>
+          <code id="mintAddress">REMPLACE_ICI_PAR_TON_ADRESSE_MINT</code>
+          <button id="copyMintBtn" class="copy-btn">Copier l’adresse</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="roadmap" class="section alt">
+      <div class="container">
+        <h3>Roadmap</h3>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="step">01</span>
+            <div>
+              <h4>Création Devnet</h4>
+              <p>Mint du token CHLS9 sur Solana Devnet pour validation technique et tests de structure.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="step">02</span>
+            <div>
+              <h4>Vitrine GitHub Pages</h4>
+              <p>Mise en ligne d’une page propre pour présenter le projet, le symbole et les liens d’exploration.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="step">03</span>
+            <div>
+              <h4>Branding HeliosAstro</h4>
+              <p>Intégration graphique plus poussée avec univers visuel, logo, animation et storytelling.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="step">04</span>
+            <div>
+              <h4>Préparation Mainnet</h4>
+              <p>Vérification complète de la tokenomics, du wallet, des métadonnées et de la stratégie de déploiement réel.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="liens" class="section">
+      <div class="container">
+        <h3>Liens utiles</h3>
+
+        <div class="links-grid">
+          <a class="link-card" id="explorerMintLink" href="#" target="_blank" rel="noopener noreferrer">
+            <span class="label">Solana Explorer</span>
+            <strong>Voir le mint du token</strong>
+          </a>
+
+          <a class="link-card" href="https://github.com/helios120/heliosastro-chls9" target="_blank" rel="noopener noreferrer">
+            <span class="label">GitHub</span>
+            <strong>Voir le dépôt du projet</strong>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 ChromoHelios CHLS9 • Projet HeliosAstro</p>
+      <p>Prototype Devnet — pas un token de production</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
