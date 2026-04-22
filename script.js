@@ -1,28 +1,31 @@
-function copyTextFromElement(elementId, buttonId, successLabel = "Copié") {
-  const el = document.getElementById(elementId);
-  const btn = document.getElementById(buttonId);
+const mintAddress = "REMPLACE_ICI_PAR_TON_ADRESSE_MINT";
+const network = "devnet";
 
-  if (!el || !btn) return;
+const mintAddressElement = document.getElementById("mintAddress");
+const copyMintBtn = document.getElementById("copyMintBtn");
+const explorerMintLink = document.getElementById("explorerMintLink");
 
-  btn.addEventListener("click", async () => {
-    const text = el.textContent.trim();
-    const original = btn.textContent;
+if (mintAddressElement) {
+  mintAddressElement.textContent = mintAddress;
+}
 
+if (explorerMintLink) {
+  explorerMintLink.href = `https://explorer.solana.com/address/${mintAddress}?cluster=${network}`;
+}
+
+if (copyMintBtn) {
+  copyMintBtn.addEventListener("click", async () => {
     try {
-      await navigator.clipboard.writeText(text);
-      btn.textContent = successLabel;
+      await navigator.clipboard.writeText(mintAddress);
+      copyMintBtn.textContent = "Adresse copiée";
       setTimeout(() => {
-        btn.textContent = original;
-      }, 1500);
+        copyMintBtn.textContent = "Copier l’adresse";
+      }, 1800);
     } catch (error) {
-      btn.textContent = "Erreur";
+      copyMintBtn.textContent = "Copie impossible";
       setTimeout(() => {
-        btn.textContent = original;
-      }, 1500);
-      console.error("Copie impossible :", error);
+        copyMintBtn.textContent = "Copier l’adresse";
+      }, 1800);
     }
   });
 }
-
-copyTextFromElement("mintAddress", "copyMintBtn");
-copyTextFromElement("walletAddress", "copyWalletBtn");
