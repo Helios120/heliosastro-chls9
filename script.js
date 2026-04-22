@@ -1,16 +1,24 @@
-const mintAddress = "REMPLACE_ICI_PAR_TON_ADRESSE_MINT";
+const mintAddress = "Hu1p8Yrmu7pUYTfhsiKowieLUUaWX6GyUW4iX8KWhFhJ";
 const network = "devnet";
+const metadataUrl =
+  "https://helios120.github.io/heliosastro-chls9/assets/token-metadata.json";
 
 const mintAddressElement = document.getElementById("mintAddress");
 const copyMintBtn = document.getElementById("copyMintBtn");
 const explorerMintLink = document.getElementById("explorerMintLink");
+const metadataLink = document.getElementById("metadataLink");
 
 if (mintAddressElement) {
   mintAddressElement.textContent = mintAddress;
 }
 
 if (explorerMintLink) {
-  explorerMintLink.href = `https://explorer.solana.com/address/${mintAddress}?cluster=${network}`;
+  explorerMintLink.href =
+    `https://explorer.solana.com/address/${mintAddress}?cluster=${network}`;
+}
+
+if (metadataLink) {
+  metadataLink.href = metadataUrl;
 }
 
 if (copyMintBtn) {
